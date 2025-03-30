@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Instagram, Linkedin } from 'lucide-react';
 import Typed from 'typed.js';
@@ -96,7 +96,7 @@ const Hero = () => {
               {/* Image container */}
               <div className="absolute inset-[6px] rounded-full bg-[#0a192f] p-4">
                 <img
-                  src="/Hero.jpg"
+                  src="./images/Hero.jpg"
                   alt="Profile"
                   className="w-full h-full rounded-full object-cover object-center"
                 />

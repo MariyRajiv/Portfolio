@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { Github, Instagram, Facebook, Linkedin, FileText } from 'lucide-react';  // Import the FileText icon
+import {FileText } from 'lucide-react';  // Import the FileText icon
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -35,7 +35,7 @@ function App() {
 
       {/* Resume Link */}
       <motion.a
-        href="/Resume_overleaf.pdf" // Replace with your actual resume URL
+        href="./images/Resume/Resume_overleaf.pdf" // Replace with your actual resume URL
         target="_blank"
         rel="noopener noreferrer"
         className="fixed left-0 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-2 bg-gradient-to-b from-[#00f2fe] to-[#4facfe] text-[#0a192f] py-6 px-2 rounded-r-lg font-medium shadow-lg hover:shadow-[0_0_30px_#00f2fe] transition-all duration-300 group"

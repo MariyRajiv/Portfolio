@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import Typed from 'typed.js';
