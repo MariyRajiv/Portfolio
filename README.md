@@ -1,3 +1,3 @@
 # Portfolio
  
-[![▶️ **Watch Demo**]([https://github.com/your-username/your-repo/blob/main/thumbnail.jpg)](https://github.com/MariyRajiv/Portfolio/blob/main/Portfolio_Home.png)]([https://github.com/your-username/your-repo/blob/main/output.mp4](https://github.com/MariyRajiv/Portfolio/blob/main/Portfolio_Demo.mp4))
+[![▶️Watch the Loom video](https://www.loom.com/share/44fc4dbbebe14bd6a8c608c26883a2bd?sid=1e24cfbb-21e7-451d-a0d6-e1e33bbeca2f)
