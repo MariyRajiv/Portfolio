@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#0a192f] text-gray-100;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-[#0a192f];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#00f2fe]/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#00f2fe];
+  }
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold text-center mb-16;
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px #00f2fe;
+  }
+  50% {
+    box-shadow: 0 0 40px #00f2fe, 0 0 60px #4facfe;
+  }
+}
+
+@keyframes borderGlow {
+  0%, 100% {
+    border-color: #00f2fe;
+  }
+  50% {
+    border-color: #4facfe;
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+.animate-glow {
+  animation: glow 2s infinite;
+}
+
+.animate-border-glow {
+  animation: borderGlow 2s infinite;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-[#00f2fe] to-[#4facfe] text-[#0a192f] px-8 py-3 rounded-full font-medium 
+  transition-all duration-300 hover:shadow-[0_0_30px_#00f2fe] hover:scale-105 active:scale-95;
+}
+
+.btn-outline {
+  @apply border-2 border-[#00f2fe] text-[#00f2fe] hover:bg-[#00f2fe] hover:text-white 
+  transition-all duration-300 hover:shadow-[0_0_30px_#00f2fe] hover:scale-105 active:scale-95;
+}
+
+.social-icon {
+  @apply w-12 h-12 rounded-full border-2 border-[#00f2fe] flex items-center justify-center 
+  text-[#00f2fe] hover:bg-[#00f2fe] hover:text-white transition-all duration-300 
+  hover:shadow-[0_0_30px_#00f2fe] hover:scale-110 active:scale-90 animate-border-glow;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
